@@ -1,0 +1,9 @@
+body{
+    background-image: url('wallpaperflare.com_wallpaper.jpg'); /* Caminho da imagem */
+    background-size: cover; /* Faz a imagem cobrir toda a área do contêiner */
+    background-position: center; 
+    background-repeat: no-repeat; 
+    margin: 0;
+    height: 100vh;
+    overflow: hidden;
+    }

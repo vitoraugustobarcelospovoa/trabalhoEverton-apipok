@@ -1,0 +1,32 @@
+<!-- pokemon-component.component.html -->
+<div class="pokemon-form">
+  <h2>Consulte um Pokémon</h2>
+  <form (ngSubmit)="getPokemonDetails()">
+    <label for="pokemonId">ID do Pokémon:</label>
+    <input type="text" id="pokemonId" [(ngModel)]="pokemonId" name="pokemonId" required />
+    <button type="submit">Buscar Pokémon</button>
+  </form>
+
+  <!-- Exibe os dados do Pokémon -->
+  <div *ngIf="pokemon; else loading">
+    <h3>{{ pokemon.name | uppercase }}</h3>
+    <img [src]="pokemon.sprites.front_default" alt="{{ pokemon.name }}" width="200" height="200" />
+    <p><strong>Height:</strong> {{ pokemon.height }} dm</p>
+    <p><strong>Weight:</strong> {{ pokemon.weight }} hectograms</p>
+    <h4>Types:</h4>
+    <ul>
+      <li *ngFor="let type of pokemon.types">
+        {{ type.type.name | titlecase }}
+      </li>
+    </ul>
+  </div>
+
+  <!-- Exibe mensagem de erro -->
+  <div *ngIf="errorMessage" class="error">
+    <p>{{ errorMessage }}</p>
+  </div>
+
+  <ng-template #loading>
+    <p>Loading Pokémon details...</p>
+  </ng-template>
+</div>

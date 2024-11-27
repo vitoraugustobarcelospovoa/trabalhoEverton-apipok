@@ -1,0 +1,134 @@
+
+.pokemon-form {
+
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    height: 100vh;
+  }
+  
+  /* Título */
+  .pokemon-form h2 {
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  /* Estilo do formulário */
+  .pokemon-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .pokemon-form label {
+    font-size: 16px;
+    font-weight: bold;
+    color: #000000;
+  }
+  
+  .pokemon-form input {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+  }
+  
+  .pokemon-form input:focus {
+    border-color: #4caf50;
+  }
+  
+  .pokemon-form button {
+    padding: 10px 20px;
+    background-color: #4caf99;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .pokemon-form button:hover {
+    background-color: #45a0a0;
+  }
+  
+
+  .pokemon-form h3 {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 20px;
+  }
+  
+  .pokemon-form img {
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+  }
+  
+  .pokemon-form p {
+    font-size: 16px;
+    color: #000000;
+  }
+  
+  .pokemon-form ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .pokemon-form li {
+    font-size: 16px;
+    color: #000000;
+  }
+  
+  /* Mensagem de erro */
+  .error {
+    color: #f44336;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  /* Mensagem de carregamento */
+  .pokemon-form p {
+    font-size: 16px;
+    color: #000000;
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  /* Responsividade */
+  @media (max-width: 768px) {
+    .pokemon-form {
+      padding: 15px;
+      margin: 10px;
+    }
+  
+    .pokemon-form h2 {
+      font-size: 20px;
+    }
+  
+    .pokemon-form h3 {
+      font-size: 20px;
+    }
+  
+    .pokemon-form p, .pokemon-form ul li {
+      font-size: 14px;
+    }
+  
+    .pokemon-form input {
+      font-size: 14px;
+    }
+  
+    .pokemon-form button {
+      font-size: 14px;
+    }
+  }
